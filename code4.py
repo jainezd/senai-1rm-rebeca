@@ -4,11 +4,20 @@ def somar(num1, num2):
     total = num1 + num2
     return total
 
-def multiplicar():
+def multiplicar(num1, num2):
+    total = num1 * num2
+    return total 
 
-    return
+def maior (num1, num2):
+    total = num1, num2
+    return max(total)
 
-escolha = int(input('[1] somar [2] multiplicar [3] Maior número [4] Menor número'))
+def menor (num1, num2):
+    total = num1, num2
+    return min (total)
+
+    
+escolha = int(input('[1] somar [2] multiplicar [3] Maior número [4] Menor número: '))
 
 num1 = float (input("Primeiro valor: "))
 num2 = float (input("Segundo valor: "))
@@ -17,6 +26,10 @@ if escolha == 1:
     print(somar(num1, num2))
 elif escolha == 2:
     print(multiplicar(num1, num2))
+elif escolha == 3:
+    print(maior (num1, num2))
+elif escolha == 4:
+    print(menor (num1, num2))
 
 
 #print('Informe um número')
